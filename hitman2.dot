@@ -1,0 +1,83 @@
+digraph G {
+    "ICA Facility (Tutorials)" [style=filled,fillcolor=red]
+    "Hawke's Bay" [style=filled,fillcolor=red]
+    "Miami" [style=filled,fillcolor=red]
+    "Santa Fortuna" [style=filled,fillcolor=red]
+    "Mumbai" [style=filled,fillcolor=red]
+    "Whittleton Creek" [style=filled,fillcolor=red]
+    "Isle of Sgàil" [style=filled,fillcolor=red]
+    "New York" [style=filled,fillcolor=red]
+    "Haven Island" [style=filled,fillcolor=red]
+    
+    "Himmelstein" [style=filled,fillcolor=green]
+    "Hantu Port" [style=filled,fillcolor=green]
+    "Siberia" [style=filled,fillcolor=green]
+    
+    "Hitman 2 Standard Edition\n$59.99" [style=filled,fillcolor=gold]
+    "Hitman 2 Silver Edition" [style=filled,fillcolor=gold]
+    "Hitman 2 Gold Edition\n$89.99" [style=filled,fillcolor=gold]
+    
+    "Hitman 2 Expansion Pass\n(Effectively Standard to Gold Upgrade)\n$39.99" [style=filled,fillcolor=lightblue3]
+    "Hitman 2 Silver to Gold Upgrade\n$19.99" [style=filled,fillcolor=lightblue3]
+    
+    "Hitman 2 Expansion Pack 1" [style=filled,fillcolor=grey]
+    "Hitman 2 Expansion Pack 2" [style=filled,fillcolor=grey]
+    
+    "Hitman 2 Starter Pack\nFree" -> "ICA Facility (Tutorials)"
+    "Hitman 2 Starter Pack\nFree" -> "Hawke's Bay";
+        
+    "Hitman 2 Standard Edition\n$59.99" -> "Hitman 2 Starter Pack\nFree"
+    "Hitman 2 Standard Edition\n$59.99" -> "Miami"
+    "Hitman 2 Standard Edition\n$59.99" -> "Santa Fortuna"
+    "Hitman 2 Standard Edition\n$59.99" -> "Mumbai"
+    "Hitman 2 Standard Edition\n$59.99" -> "Whittleton Creek"
+    "Hitman 2 Standard Edition\n$59.99" -> "Isle of Sgàil"
+    "Hitman 2 Standard Edition\n$59.99" -> "Himmelstein"
+
+    "Hitman 2 Silver Edition" -> "Hitman 2 Standard Edition\n$59.99"
+    "Hitman 2 Silver Edition" -> "Hitman 2 Expansion Pack 1"
+    
+    "Hitman 2 Gold Edition\n$89.99" -> "Hitman 2 Silver Edition"
+    "Hitman 2 Gold Edition\n$89.99" -> "Hitman 2 Expansion Pack 2"
+    
+    "Hitman 2 Expansion Pass\n(Effectively Standard to Gold Upgrade)\n$39.99" -> "Hitman 2 Expansion Pack 1"
+    "Hitman 2 Expansion Pack 1" -> "Hantu Port"
+    "Hitman 2 Expansion Pack 1" -> "New York"
+    "Hitman 2 Expansion Pass\n(Effectively Standard to Gold Upgrade)\n$39.99" -> "Hitman 2 Expansion Pack 2"
+    "Hitman 2 Expansion Pack 2" -> "Siberia"
+    "Hitman 2 Expansion Pack 2" -> "Haven Island"
+    
+    "Hitman 2 Silver to Gold Upgrade\n$19.99" -> "Hitman 2 Expansion Pack 2"
+    
+    "Hitman 2 Whittleton Creek Pack\n$11.99" -> "Himmelstein"
+    "Hitman 2 Whittleton Creek Pack\n$11.99" -> "Whittleton Creek"
+    "Hitman 2 Whittleton Creek Pack\n$11.99" -> "Hitman 2 Starter Pack\nFree"
+    
+    {
+        rank = same;
+        "Hitman 2 Whittleton Creek Pack\n$11.99";
+        "Hitman 2 Standard Edition\n$59.99"
+    }
+    
+    {
+        rank = same;
+        "Hitman 2 Expansion Pass\n(Effectively Standard to Gold Upgrade)\n$39.99";
+        "Hitman 2 Silver to Gold Upgrade\n$19.99"
+    }
+    
+    {
+        rank = same;
+        "Siberia";
+        "Haven Island";
+        "Hantu Port";
+        "New York";
+        "Miami";
+        "Isle of Sgàil";
+        "Mumbai";
+        "Whittleton Creek";
+        "Santa Fortuna";
+        "Hawke's Bay";
+        "ICA Facility (Tutorials)";
+        "Himmelstein";
+    }
+}

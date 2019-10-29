@@ -1,0 +1,45 @@
+digraph G {
+    "Paris" [style=filled,fillcolor=red]
+    "Sapienza" [style=filled,fillcolor=red]
+    "Marrakesh" [style=filled,fillcolor=red]
+    "Bangkok" [style=filled,fillcolor=red]
+    "Colorado" [style=filled,fillcolor=red]
+    "Hokkaido" [style=filled,fillcolor=red]
+    
+    "Hitman (2016)" [style=filled,fillcolor=gold]
+    "Hitman GOTY (2016)\n$59.99" [style=filled,fillcolor=gold]
+    
+    "Hitman GOTY Legacy Pack\n$19.99" [style=filled,fillcolor=lightblue3]
+    "Hitman GOTY Legacy Pack Upgrade\n$9.99" [style=filled,fillcolor=lightblue3]
+    
+    "Patient Zero Campaign" [style=filled,fillcolor=darkviolet]
+    "Landslide" [style=filled,fillcolor=darkviolet]
+    "The Icon" [style=filled,fillcolor=darkviolet]
+    "A House Built on Sand" [style=filled,fillcolor=darkviolet]
+    
+    "Hitman (2016)" -> "Hitman Legacy Pack"
+    "Hitman Legacy Pack" -> "Paris"
+    "Hitman Legacy Pack" -> "Sapienza"
+    "Hitman Legacy Pack" -> "Marrakesh"
+    "Hitman Legacy Pack" -> "Bangkok"
+    "Hitman Legacy Pack" -> "Colorado"
+    "Hitman Legacy Pack" -> "Hokkaido"
+
+    "Hitman GOTY (2016)\n$59.99" -> "Hitman GOTY Legacy Pack\n$19.99"
+    "Hitman GOTY Legacy Pack\n$19.99" -> "Hitman Legacy Pack"
+    "Hitman GOTY Legacy Pack\n$19.99" -> "Hitman GOTY Legacy Pack Upgrade\n$9.99"
+    
+    "Hitman GOTY Legacy Pack Upgrade\n$9.99" -> "Patient Zero Campaign"
+    "Hitman GOTY Legacy Pack Upgrade\n$9.99" -> "GOTY Suits"
+    "Hitman GOTY Legacy Pack Upgrade\n$9.99" -> "Hitman Bonus Missions"
+    
+    "Hitman Bonus Missions" -> "Landslide"
+    "Hitman Bonus Missions" -> "The Icon"
+    "Hitman Bonus Missions" -> "A House Built on Sand"
+    
+    {
+        rank = same;
+        "Hitman GOTY (2016)\n$59.99";
+        "Hitman (2016)"
+    }
+}
