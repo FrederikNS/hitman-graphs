@@ -13,9 +13,9 @@ digraph G {
     "Hitman GOTY Legacy Pack Upgrade\n$9.99" [style=filled,fillcolor=lightblue3]
     
     "Patient Zero Campaign" [style=filled,fillcolor=darkviolet]
-    "Landslide" [style=filled,fillcolor=darkviolet]
-    "The Icon" [style=filled,fillcolor=darkviolet]
-    "A House Built on Sand" [style=filled,fillcolor=darkviolet]
+    "The Corky Commotion" [style=filled,fillcolor=darkviolet]
+    "The Cheveyo Calibration" [style=filled,fillcolor=darkviolet]
+    "The Dexter Discordance" [style=filled,fillcolor=darkviolet]
     
     "Hitman (2016)" -> "Hitman Legacy Pack"
     "Hitman Legacy Pack" -> "Paris"
@@ -31,11 +31,11 @@ digraph G {
     
     "Hitman GOTY Legacy Pack Upgrade\n$9.99" -> "Patient Zero Campaign"
     "Hitman GOTY Legacy Pack Upgrade\n$9.99" -> "GOTY Suits"
-    "Hitman GOTY Legacy Pack Upgrade\n$9.99" -> "Hitman Bonus Missions"
+    "Hitman GOTY Legacy Pack Upgrade\n$9.99" -> "GOTY Escalations"
     
-    "Hitman Bonus Missions" -> "Landslide"
-    "Hitman Bonus Missions" -> "The Icon"
-    "Hitman Bonus Missions" -> "A House Built on Sand"
+    "GOTY Escalations" -> "The Corky Commotion"
+    "GOTY Escalations" -> "The Cheveyo Calibration"
+    "GOTY Escalations" -> "The Dexter Discordance"
     
     {
         rank = same;
